@@ -1,6 +1,4 @@
 opencv-python
 torch
-albumentations
-visdom
 numpy
 matplotlib
