@@ -8,3 +8,8 @@ class largeCharacterLevelCNN(nn.Module):
 
   # define conv layers
 
+  self.dropout_input = nn.Dropout2D(args.dropout_input)
+
+  self.conv1 = nn.Conv2d
+
+
