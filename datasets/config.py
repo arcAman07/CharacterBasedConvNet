@@ -1,7 +1,3 @@
-import tarfile
-import wget
-import pandas as pd
-import numpy as np
 ag_news_csv = "https://s3.amazonaws.com/fast-ai-nlp/ag_news_csv.tgz"
 amazon_review_full_csv = "https://s3.amazonaws.com/fast-ai-nlp/amazon_review_full_csv.tgz"
 amazon_review_polarity_csv = "https://s3.amazonaws.com/fast-ai-nlp/amazon_review_polarity_csv.tgz"
