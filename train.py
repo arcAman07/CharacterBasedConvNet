@@ -13,7 +13,6 @@ from torch.utils.data import random_split
 from torchvision.utils import make_grid
 import matplotlib
 import matplotlib.pyplot as plt
-%matplotlib inline
 import pandas as pd
 import seaborn as sns
 
