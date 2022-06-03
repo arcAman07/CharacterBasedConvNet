@@ -26,5 +26,5 @@ The files train.csv and test.csv contain all the training samples as comma-spara
 
 5) Yelp Review Full => yelp_review_full_csv
 6) Amazon Review Polarity => amazon_review_polarity_csv
-7) Amazon Review Full => amazon_review_full_csv
+8) Amazon Review Full => amazon_review_full_csv
 9) Yahoo! Answers => yahoo_answers_csv
