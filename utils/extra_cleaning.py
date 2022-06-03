@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import json
 import math
+from unidecode import unidecode
 
 def remove_newlines_tabs(text):
     """
