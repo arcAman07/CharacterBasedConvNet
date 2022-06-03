@@ -88,3 +88,26 @@ def remove_whitespace(text):
     # So I am replacing these with one space so that It will not consider two words as one token.
     text = Without_whitespace.replace('?', ' ? ').replace(')', ') ')
     return text
+
+# Code for accented characters removal
+def accented_characters_removal(text):
+    # this is a docstring
+    """
+    The function will remove accented characters from the 
+    text contained within the Dataset.
+       
+    arguments:
+        input_text: "text" of type "String". 
+                    
+    return:
+        value: "text" with removed accented characters.
+        
+    Example:
+    Input : Málaga, àéêöhello
+    Output : Malaga, aeeohello    
+        
+    """
+    # Remove accented characters from text using unidecode.
+    # Unidecode() - It takes unicode data & tries to represent it to ASCII characters. 
+    text = unidecode.unidecode(text)
+    return text
