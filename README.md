@@ -24,7 +24,7 @@ The Yelp reviews polarity dataset is constructed by considering stars 1 and 2 ne
 
 The files train.csv and test.csv contain all the training samples as comma-sparated values. There are 2 columns in them, corresponding to class index (1 and 2) and review text. The review texts are escaped using double quotes ("), and any internal double quote is escaped by 2 double quotes (""). New lines are escaped by a backslash followed with an "n" character, that is "\n".
 
-6) Yelp Review Full => yelp_review_full_csv
-7) Amazon Review Polarity => amazon_review_polarity_csv
+5) Yelp Review Full => yelp_review_full_csv
+6) Amazon Review Polarity => amazon_review_polarity_csv
 8) Amazon Review Full => amazon_review_full_csv
 9) Yahoo! Answers => yahoo_answers_csv
