@@ -8,7 +8,6 @@ List of the datasets to be used:
 2) Sogou News => sogou_news_csv
 3) DBPedia => dbpedia_csv
 4) Yelp Review Polarity => yelp_review_polarity_csv
-5) Yelp Review Polarity Dataset
 
 Version 1, Updated 09/09/2015
 
