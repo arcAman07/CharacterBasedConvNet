@@ -111,3 +111,38 @@ def accented_characters_removal(text):
     # Unidecode() - It takes unicode data & tries to represent it to ASCII characters. 
     text = unidecode.unidecode(text)
     return text
+
+# Code for removing repeated characters and punctuations
+
+def reducing_incorrect_character_repeatation(text):
+    """
+    This Function will reduce repeatition to two characters 
+    for alphabets and to one character for punctuations.
+    
+    arguments:
+         input_text: "text" of type "String".
+         
+    return:
+        value: Finally formatted text with alphabets repeating to 
+        two characters & punctuations limited to one repeatition 
+        
+    Example:
+    Input : Realllllllllyyyyy,        Greeeeaaaatttt   !!!!?....;;;;:)
+    Output : Reallyy, Greeaatt !?.;:)
+    
+    """
+    # Pattern matching for all case alphabets
+    Pattern_alpha = re.compile(r"([A-Za-z])\1{1,}", re.DOTALL)
+    
+    # Limiting all the  repeatation to two characters.
+    Formatted_text = Pattern_alpha.sub(r"\1\1", text) 
+    
+    # Pattern matching for all the punctuations that can occur
+    Pattern_Punct = re.compile(r'([.,/#!$%^&*?;:{}=_`~()+-])\1{1,}')
+    
+    # Limiting punctuations in previously formatted string to only one.
+    Combined_Formatted = Pattern_Punct.sub(r'\1', Formatted_text)
+    
+    # The below statement is replacing repeatation of spaces that occur more than two times with that of one occurrence.
+    Final_Formatted = re.sub(' {2,}',' ', Combined_Formatted)
+    return Final_Formatted
