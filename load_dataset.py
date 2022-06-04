@@ -8,6 +8,8 @@ import cleaning
 from cleaning import *
 import encoding
 from encoding import *
+import parameters
+from parameters import *
 # Download the dataset
 download_url(yelp_review_polarity_csv, '.')
 
@@ -20,8 +22,8 @@ data_dir = './data/yelp_review_polarity_csv'
 print(os.listdir(data_dir))
 print(ag_news_csv)
 
-# Reading the train dataset from the csv file
-train_data = pd.read_csv("/content/data/yelp_review_polarity_csv/train.csv")
+# # Reading the train dataset from the csv file
+# train_data = pd.read_csv("/content/data/yelp_review_polarity_csv/train.csv")
 
-# Reading the train dataset from the csv file
-test_data = pd.read_csv("/content/data/yelp_review_polarity_csv/test.csv")
+# # Reading the train dataset from the csv file
+# test_data = pd.read_csv("/content/data/yelp_review_polarity_csv/test.csv")
