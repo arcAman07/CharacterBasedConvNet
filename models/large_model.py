@@ -6,6 +6,7 @@ class LargeCharacterConvnet(TextClassificationBase):
   def __init__(self):
     super(LargeCharacterConvnet, self).__init__()
     self.dropout_input = nn.Dropout2d(0.5)
+    # Defining the convolutional layers
     self.conv1 = nn.Sequential(
       nn.Conv1d(
         1014,
@@ -69,6 +70,9 @@ class LargeCharacterConvnet(TextClassificationBase):
             1014,
             70,
         )
+
+    self.output_dimension = self._get_conv_output(input_shape)
+
 
 
 
