@@ -10,6 +10,7 @@ import encoding
 from encoding import *
 import parameters
 from parameters import *
+from torch.utils.data import Dataset
 # Download the dataset
 download_url(yelp_review_polarity_csv, '.')
 
