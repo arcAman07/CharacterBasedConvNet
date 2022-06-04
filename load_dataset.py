@@ -37,7 +37,7 @@ for i in range(0, len(train_data)):
   if len(list(text)) > 1014:
     text = text[0:1014]
   label = train_data.iloc[i,0]
-  sentence_tensor = compute_oneHotEncoding(text)
+  sentence_tensor = compute_oneHotEncoding(text,vocab_size)
   train_dataset.append((sentence_tensor,label))
 
 train_dataset = torch.Floattensor(train_dataset)
