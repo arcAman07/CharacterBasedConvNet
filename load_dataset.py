@@ -19,3 +19,5 @@ with tarfile.open('./yelp_review_polarity_csv.tgz', 'r:gz') as tar:
 data_dir = './data/yelp_review_polarity_csv'
 print(os.listdir(data_dir))
 print(ag_news_csv)
+
+# Reading the train dataset from the csv file
