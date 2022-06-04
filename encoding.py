@@ -1,6 +1,8 @@
 import cleaning
 from cleaning import *
 import torch
+import parameters
+from parameters import *
 # Return's index of the character from the vocab list
 def index_character (vocab, character):
   for i in range(len(vocab)):
@@ -8,7 +10,7 @@ def index_character (vocab, character):
       return i
   return -1
 
-def compute_oneHotEncoding(text):
+def compute_oneHotEncoding(text,vocab):
   cleaned_text = cleaning_data(text)
   sentence_tensor = torch.zeros([1014,70])
   j = 0
