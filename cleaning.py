@@ -1,3 +1,6 @@
+import utils.text_cleaning
+from utils.text_cleaning import *
+
 # Cleaning the data
 
 def cleaning_data(text):

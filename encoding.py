@@ -1,3 +1,5 @@
+
+
 # Return's index of the character from the vocab list
 def index_character (vocab, character):
   for i in range(len(vocab)):
