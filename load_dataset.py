@@ -2,7 +2,7 @@ import list_datasets
 from list_datasets import *
 import torchvision
 from torchvision.datasets.utils import download_url
-
+import tarfile
 
 # Download the dataset
 download_url(yelp_review_polarity_csv, '.')
