@@ -73,6 +73,15 @@ class LargeCharacterConvnet(TextClassificationBase):
 
     self.output_dimension = self._get_conv_output(input_shape)
 
+    self.fc1 = nn.Sequential(
+      nn.Linear(self.output_dimension, 2048),
+      nn.ReLU(),
+      nn.Dropout(0.5),
+      
+    )
+    self.fc2 = nn.Sequential(nn.Linear(2048,2048), nn.ReLU(), nn.Dropout(0.5))
+
+    self.fc3 = nn.Linear(2048, 2)
 
 
 
