@@ -1,4 +1,6 @@
 import list_datasets
+from list_datasets import *
+import torchvision
 from torchvision.datasets.utils import download_url
 
 
@@ -12,4 +14,4 @@ with tarfile.open('./yelp_review_polarity_csv.tgz', 'r:gz') as tar:
 # Look into the data directory
 data_dir = './data/yelp_review_polarity_csv'
 print(os.listdir(data_dir))
-print(list_datasets.ag_news_csv)
+print(ag_news_csv)
