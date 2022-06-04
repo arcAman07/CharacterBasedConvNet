@@ -1,3 +1,4 @@
+import re
 def lower(text):
     return text.lower()
 
