@@ -22,3 +22,6 @@ print(ag_news_csv)
 
 # Reading the train dataset from the csv file
 train_data = pd.read_csv("/content/data/yelp_review_polarity_csv/train.csv")
+
+# Reading the train dataset from the csv file
+test_data = pd.read_csv("/content/data/yelp_review_polarity_csv/test.csv")
