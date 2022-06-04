@@ -1,4 +1,5 @@
-
+import cleaning
+from cleaning import *
 
 # Return's index of the character from the vocab list
 def index_character (vocab, character):

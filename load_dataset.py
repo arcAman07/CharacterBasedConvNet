@@ -1,4 +1,5 @@
 import list_datasets
+import os
 from list_datasets import *
 import torchvision
 from torchvision.datasets.utils import download_url
